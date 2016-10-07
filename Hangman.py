@@ -15,3 +15,10 @@ def getGuessedWord(secretWord, lettersGuessed):
         else:
             newWord += " _ "
     return newWord
+
+# 3. Printint out all the available letters
+
+import string
+
+def getAvailableLetters(lettersGuessed):
+    return ''.join([i for i in string.ascii_lowercase if i not in lettersGuessed])
